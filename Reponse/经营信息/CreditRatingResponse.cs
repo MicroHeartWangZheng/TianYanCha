@@ -49,7 +49,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("bondCreditLevel")]
-        public DateTime? BondCreditLevel { get; set; }
+        public string BondCreditLevel { get; set; }
 
         /// <summary>
         /// 

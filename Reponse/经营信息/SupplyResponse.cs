@@ -91,7 +91,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("ratio")]
-		public DateTime? Ratio { get; set; }
+		public string Ratio { get; set; }
 	}
 
 	public class SuppliesYearItem

@@ -7,7 +7,7 @@ namespace TianYanCha.SDK.Request
     /// <summary>
     /// 企业信用报告（专业版）
     /// </summary>
-    public class CompanyProRequest : TianRequest<BaseResponse<CompanyProResponse>>
+    public class CompanyProRequest : TianRequest<BaseResponse<string>>
     {
         /// <summary>
         /// 公司名

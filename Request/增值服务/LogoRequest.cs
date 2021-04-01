@@ -7,7 +7,7 @@ namespace TianYanCha.SDK.Request
     /// <summary>
     /// 企业无水印logo
     /// </summary>
-    public class LogoRequest : TianRequest<BaseResponse<LogoResponse>>
+    public class LogoRequest : TianRequest<BaseResponse<string>>
     {
         /// <summary>
         /// 搜索关键字（公司名称、公司id、注册号或社会统一信用代码）

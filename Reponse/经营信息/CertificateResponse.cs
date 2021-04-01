@@ -70,6 +70,6 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("content")]
-		public DateTime? Content { get; set; }
+		public string Content { get; set; }
 	}
 }

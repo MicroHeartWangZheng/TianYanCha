@@ -51,7 +51,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("staff")]
-		public string Staff { get; set; }
+		public List<DishonestStaff> Staff { get; set; }
 
 		/// <summary>
 		/// 
@@ -127,4 +127,16 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("gistid")]
 		public string Gistid { get; set; }
 	}
+
+	public class DishonestStaff
+    {
+		[JsonProperty("role")]
+		public string Role { get; set; }
+
+		[JsonProperty("code")]
+		public string Code { get; set; }
+
+		[JsonProperty("name")]
+		public string Name { get; set; }
+    }
 }

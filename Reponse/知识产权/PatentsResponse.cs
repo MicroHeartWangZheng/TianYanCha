@@ -91,7 +91,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 北京品源专利代理有限公司 11332
 		/// </summary>
 		[JsonProperty("agency")]
-		public DateTime? Agency { get; set; }
+		public string Agency { get; set; }
 
 		/// <summary>
 		/// 本发明实施例公开了一种自动驾驶车辆的故障确定方法及装置、设备及存储介质。所述方法包括：获取自动驾驶车辆上的至少三个控制系统中，两两之间心跳信号的检测结果；根据各所述检测结果，对所述控制系统进行故障识别。本发明实施例的技术方案解决了现有技术中难以准确确定主控系统和安全冗余系统是否发生故障的技术缺陷，实现了更加准确地对主控系统和安全冗余系统的故障情况做出判定。

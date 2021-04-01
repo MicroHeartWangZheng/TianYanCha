@@ -7,7 +7,7 @@ namespace TianYanCha.SDK.Request
     /// <summary>
     /// 企业简介
     /// </summary>
-    public class ProfileRequest : TianRequest<BaseResponse<ProfileResponse>>
+    public class ProfileRequest : TianRequest<BaseResponse<string>>
     {
         /// <summary>
         /// 搜索关键字（公司名称、公司id、注册号或社会统一信用代码）

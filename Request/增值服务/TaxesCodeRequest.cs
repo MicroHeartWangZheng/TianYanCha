@@ -7,7 +7,7 @@ namespace TianYanCha.SDK.Request
     /// <summary>
     /// 纳税人识别号
     /// </summary>
-    public class TaxesCodeRequest : TianRequest<BaseResponse<TaxesCodeResponse>>
+    public class TaxesCodeRequest : TianRequest<BaseResponse<string>>
     {
         /// <summary>
         /// 搜索关键字（公司名称、公司id、注册号或社会统一信用代码）
