@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -56,11 +57,12 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("base")]
 		public string Base { get; set; }
 
+		public string EstiblishTime => Estiblish.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("estiblishTime")]
-		public long EstiblishTime { get; set; }
+		public long? Estiblish { get; set; }
 
 		/// <summary>
 		/// 开业
@@ -84,7 +86,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("cid")]
-		public long Cid { get; set; }
+		public long? Cid { get; set; }
 	}
 	public class OfficeListItem
 	{
@@ -104,7 +106,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("estiblishTime")]
-		public long EstiblishTime { get; set; }
+		public long? EstiblishTime { get; set; }
 
 		/// <summary>
 		/// 开业
@@ -122,7 +124,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("cid")]
-		public long Cid { get; set; }
+		public long? Cid { get; set; }
 
 		/// <summary>
 		/// 217128 万元
@@ -148,7 +150,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("hid")]
-		public long Hid { get; set; }
+		public long? Hid { get; set; }
 
 		/// <summary>
 		/// 105000.000000万人民币
@@ -172,7 +174,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("estiblishTime")]
-		public long EstiblishTime { get; set; }
+		public long? EstiblishTime { get; set; }
 
 		/// <summary>
 		/// 存续（在营、开业、在册）
@@ -196,7 +198,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("cid")]
-		public long Cid { get; set; }
+		public long? Cid { get; set; }
 	}
 }
 

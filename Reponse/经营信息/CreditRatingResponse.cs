@@ -10,7 +10,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("total")]
-        public long Total { get; set; }
+        public long? Total { get; set; }
 
         /// <summary>
         /// 
@@ -37,7 +37,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("gid")]
-        public long Gid { get; set; }
+        public long? Gid { get; set; }
 
         /// <summary>
         /// 中诚信国际信用评级有限责任公司

@@ -10,7 +10,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("total")]
-        public long Total { get; set; }
+        public long? Total { get; set; }
 
         /// <summary>
         /// 

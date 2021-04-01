@@ -8,7 +8,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("graphId")]
-		public long GraphId { get; set; }
+		public long? GraphId { get; set; }
 
 		/// <summary>
 		/// 北京正方向汽车租赁有限公司
@@ -32,7 +32,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("longitude")]
-		public double Longitude { get; set; }
+		public double longitude { get; set; }
 
 		/// <summary>
 		/// 

@@ -14,7 +14,7 @@ namespace TianYanCha.SDK.Request
         /// </summary>
 
         [JsonProperty("pageSize")]
-        public long PageSize { get; set; }
+        public long? PageSize { get; set; }
 
         /// <summary>
         /// 当前页数（默认第一页）

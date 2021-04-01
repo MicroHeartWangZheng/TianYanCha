@@ -9,7 +9,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 
@@ -24,7 +24,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("hid")]
-		public long Hid { get; set; }
+		public long? Hid { get; set; }
 
 		/// <summary>
 		/// 北京百度网讯科技有限公司
@@ -48,7 +48,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("isDimission")]
-		public long IsDimission { get; set; }
+		public long? IsDimission { get; set; }
 
 		/// <summary>
 		/// 李彦宏
@@ -60,7 +60,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("graphId")]
-		public long GraphId { get; set; }
+		public long? GraphId { get; set; }
 
 		/// <summary>
 		/// 

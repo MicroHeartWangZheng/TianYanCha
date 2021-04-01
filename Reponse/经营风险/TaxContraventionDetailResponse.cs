@@ -26,7 +26,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("companyGraphId")]
-        public long CompanyGraphId { get; set; }
+        public long? CompanyGraphId { get; set; }
 
         /// <summary>
         /// 身份证

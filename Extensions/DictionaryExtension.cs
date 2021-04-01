@@ -95,7 +95,7 @@ namespace TianYanCha.SDK.Extensions
                     throw new Exception("dic内部含有值为null的字段!");
                 }
 
-                if (pair.Value.GetType() == typeof(long))
+                if (pair.Value.GetType() == typeof(long?))
                 {
                     xml += "<" + pair.Key + ">" + pair.Value + "</" + pair.Key + ">";
                 }
@@ -103,7 +103,7 @@ namespace TianYanCha.SDK.Extensions
                 {
                     xml += "<" + pair.Key + ">" + "<![CDATA[" + pair.Value + "]]></" + pair.Key + ">";
                 }
-                else//除了string和long类型不能含有其他数据类型
+                else//除了string和long?类型不能含有其他数据类型
                 {
                     xml += "<" + pair.Key + ">" + "<![CDATA[" + JsonConvert.SerializeObject(pair.Value) + "]]></" + pair.Key + ">";
                 }
@@ -127,7 +127,7 @@ namespace TianYanCha.SDK.Extensions
 
                 object value = dem.Current.Value;
 
-                if (value != null && value is long && (long)value != default(long))
+                if (value != null && value is long? && (long?)value != default(long?))
                 {
                     newDict.Add(name, value);
                 }
@@ -139,15 +139,15 @@ namespace TianYanCha.SDK.Extensions
                 {
                     newDict.Add(name, value);
                 }
-                else if (value != null && value is long && (long)value != default(long))
+                else if (value != null && value is long? && (long?)value != default(long?))
                 {
                     newDict.Add(name, value);
                 }
 
-                //if (value != null && (value.GetType() == typeof(long) ||
+                //if (value != null && (value.GetType() == typeof(long?) ||
                 //    value.GetType() == typeof(decimal) ||
                 //    value.GetType() == typeof(string) ||
-                //    value.GetType() == typeof(long)))
+                //    value.GetType() == typeof(long?)))
                 //{
                 //    newDict.Add(name, value);
                 //}

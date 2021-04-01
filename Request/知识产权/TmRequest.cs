@@ -13,12 +13,12 @@ namespace TianYanCha.SDK.Request
         /// 申请开始时间
         /// </summary>
         [JsonProperty("appDateBegin")]
-        public long AppDateBegin { get; set; }
+        public long? AppDateBegin { get; set; }
         /// <summary>
         /// 申请结束时间
         /// </summary>
         [JsonProperty("appDateEnd")]
-        public long AppDateEnd { get; set; }
+        public long? AppDateEnd { get; set; }
 
         /// <summary>
         /// 国际分类(参考文档商标国际分类.pdf)
@@ -48,7 +48,7 @@ namespace TianYanCha.SDK.Request
         /// 商标状态 1-商标已注册 2-商标无效 3-初审公告 4-等待实质审查 5-商标申请中 6-商标异议中 7-驳回复审中 8-商标其他情形 9-等待驳回复审 10-撤销/无效宣告申请审查中
         /// </summary>
         [JsonProperty("status")]
-        public long Status { get; set; }
+        public long? Status { get; set; }
 
 
         public override string GetApiName()

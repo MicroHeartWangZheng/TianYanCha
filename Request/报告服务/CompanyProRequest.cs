@@ -19,7 +19,7 @@ namespace TianYanCha.SDK.Request
         /// 公司id
         /// </summary>
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// 32位uuid（区分大小写）

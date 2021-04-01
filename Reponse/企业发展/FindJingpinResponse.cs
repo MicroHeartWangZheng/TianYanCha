@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -9,7 +10,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 
@@ -24,7 +25,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("date")]
-		public long Date { get; set; }
+		public long? Date { get; set; }
 
 		/// <summary>
 		/// 百度IDL研究院
@@ -44,11 +45,13 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("icon")]
 		public string Icon { get; set; }
 
+
+		public string SetupDate => Setup.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("setupDate")]
-		public long SetupDate { get; set; }
+		public long? Setup { get; set; }
 
 		/// <summary>
 		/// 网红打造系统研发商
@@ -78,7 +81,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("graphId")]
-		public long GraphId { get; set; }
+		public long? GraphId { get; set; }
 
 		/// <summary>
 		/// 人工智能

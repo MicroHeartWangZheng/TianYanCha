@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -36,7 +38,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("type")]
-        public long Type { get; set; }
+        public long? Type { get; set; }
 
         /// <summary>
         /// 平安银行
@@ -62,17 +64,20 @@ namespace TianYanCha.SDK.Reponse
         [JsonProperty("usedBondName")]
         public string UsedBondName { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonProperty("approvedTime")]
-        public long ApprovedTime { get; set; }
+
+        public string ApprovedTime => Approved.ToDateTime();
+
 
         /// <summary>
         /// 
         /// </summary>
+        [JsonProperty("approvedTime")]
+        public long? Approved { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// 
@@ -120,13 +125,13 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("percentileScore")]
-        public long PercentileScore { get; set; }
+        public long? PercentileScore { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("isMicroEnt")]
-        public long IsMicroEnt { get; set; }
+        public long? IsMicroEnt { get; set; }
 
         /// <summary>
         /// 
@@ -176,17 +181,19 @@ namespace TianYanCha.SDK.Reponse
         [JsonProperty("creditCode")]
         public string CreditCode { get; set; }
 
+
+        public string FromTime => From.ToDateTime();
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("fromTime")]
-        public long FromTime { get; set; }
+        public long? From { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("socialStaffNum")]
-        public long SocialStaffNum { get; set; }
+        public long? SocialStaffNum { get; set; }
 
         /// <summary>
         /// 银行股份
@@ -230,11 +237,12 @@ namespace TianYanCha.SDK.Reponse
         [JsonProperty("actualCapital")]
         public string ActualCapital { get; set; }
 
+        public string EstiblishTime => Estiblish.ToDateTime();
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("estiblishTime")]
-        public long EstiblishTime { get; set; }
+        public long? Estiblish { get; set; }
 
         /// <summary>
         /// 深圳市市场监督管理局

@@ -10,7 +10,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("total")]
-        public long Total { get; set; }
+        public long? Total { get; set; }
 
         /// <summary>
         /// 
@@ -25,7 +25,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("legalPersonId")]
-        public long LegalPersonId { get; set; }
+        public long? LegalPersonId { get; set; }
 
         /// <summary>
         /// 开业
@@ -43,7 +43,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("legalType")]
-        public long LegalType { get; set; }
+        public long? LegalType { get; set; }
 
         /// <summary>
         /// 1001.000000万人民币

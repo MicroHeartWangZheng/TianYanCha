@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -9,7 +10,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 
@@ -38,11 +39,13 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("logoOssPath")]
 		public string LogoOssPath { get; set; }
 
+
+		public string SetupDate => Setup.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("setupDate")]
-		public long SetupDate { get; set; }
+		public long? Setup { get; set; }
 
 		/// <summary>
 		/// AI医疗服务平台
@@ -60,7 +63,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("graphId")]
-		public long GraphId { get; set; }
+		public long? GraphId { get; set; }
 
 		/// <summary>
 		/// 人工智能

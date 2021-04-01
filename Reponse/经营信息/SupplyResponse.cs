@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -31,7 +32,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 	}
 
 	public class SupplyResultItem
@@ -40,13 +41,15 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("supplier_graphId")]
-		public long SupplierGraphId { get; set; }
+		public long? SupplierGraphId { get; set; }
 
+
+		public string AnnouncementDate => Announcement.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("announcement_date")]
-		public long AnnouncementDate { get; set; }
+		public long? Announcement { get; set; }
 
 		/// <summary>
 		/// 

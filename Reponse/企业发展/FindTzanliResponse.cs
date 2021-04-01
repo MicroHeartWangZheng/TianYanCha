@@ -9,7 +9,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 
@@ -60,7 +60,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("tzdate")]
-		public long Tzdate { get; set; }
+		public long? Tzdate { get; set; }
 
 		/// <summary>
 		/// 
@@ -96,7 +96,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("id")]
-		public long Id { get; set; }
+		public long? Id { get; set; }
 
 		/// <summary>
 		/// 

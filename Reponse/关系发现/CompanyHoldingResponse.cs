@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -9,7 +10,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 
@@ -32,11 +33,12 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("chainList")]
 		public List<List<ChainListItemItem>> ChainList { get; set; }
 
+		public string EstiblishTime => Estiblish.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("estiblishTime")]
-		public long EstiblishTime { get; set; }
+		public long? Estiblish { get; set; }
 
 		/// <summary>
 		/// 20000万人民币

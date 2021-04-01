@@ -31,7 +31,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 	}
 
 	public class CustomerResultItem
@@ -40,7 +40,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("announcement_date")]
-		public long AnnouncementDate { get; set; }
+		public long? AnnouncementDate { get; set; }
 
 		/// <summary>
 		/// 
@@ -64,7 +64,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("client_graphId")]
-		public long ClientGraphId { get; set; }
+		public long? ClientGraphId { get; set; }
 
 		/// <summary>
 		/// 

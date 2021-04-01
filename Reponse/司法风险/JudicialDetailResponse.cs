@@ -20,7 +20,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("id")]
-		public long Id { get; set; }
+		public long? Id { get; set; }
 
 		/// <summary>
 		/// 1600万人民币元
@@ -38,7 +38,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("executedPersonHid")]
-		public long ExecutedPersonHid { get; set; }
+		public long? ExecutedPersonHid { get; set; }
 
 		/// <summary>
 		/// 南宁市中级人民法院
@@ -62,7 +62,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("executedPersonCid")]
-		public long ExecutedPersonCid { get; set; }
+		public long? ExecutedPersonCid { get; set; }
 
 		/// <summary>
 		/// 

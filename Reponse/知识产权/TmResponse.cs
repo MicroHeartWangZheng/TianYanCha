@@ -67,7 +67,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 38-通讯服务
 		/// </summary>
 		[JsonProperty("longCls")]
-		public string longCls { get; set; }
+		public string LongCls { get; set; }
 
 		/// <summary>
 		/// 北京百度网讯科技有限公司

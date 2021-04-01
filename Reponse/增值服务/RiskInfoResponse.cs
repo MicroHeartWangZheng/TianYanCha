@@ -25,7 +25,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("count")]
-		public long Count { get; set; }
+		public long? Count { get; set; }
 
 		/// <summary>
 		/// 自身风险
@@ -43,7 +43,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("type")]
-		public long Type { get; set; }
+		public long? Type { get; set; }
 	}
 
 	public class RiskInfoItemChildren
@@ -52,7 +52,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 高风险信息
@@ -76,7 +76,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("type")]
-		public long Type { get; set; }
+		public long? Type { get; set; }
 	}
 
 	public class RiskInfoItemChildrenChildren
@@ -85,13 +85,13 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("id")]
-		public long Id { get; set; }
+		public long? Id { get; set; }
 
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("riskCount")]
-		public long RiskCount { get; set; }
+		public long? RiskCount { get; set; }
 
 		/// <summary>
 		/// 该公司 <em>曾因未按时履行法律义务而被法院强制执行</em>
@@ -103,7 +103,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("type")]
-		public long Type { get; set; }
+		public long? Type { get; set; }
 
 		/// <summary>
 		/// 被执行人
@@ -115,7 +115,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("humanGraphId")]
-		public long HumanGraphId { get; set; }
+		public long? HumanGraphId { get; set; }
 	}
 }
 

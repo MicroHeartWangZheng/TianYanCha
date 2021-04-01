@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -11,7 +12,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("total")]
-        public long Total { get; set; }
+        public long? Total { get; set; }
 
         /// <summary>
         /// 
@@ -52,11 +53,12 @@ namespace TianYanCha.SDK.Reponse
         [JsonProperty("qyinfo")]
         public string Qyinfo { get; set; }
 
+        public string CaseCreateTime => CaseCreate.ToDateTime();
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("caseCreateTime")]
-        public long CaseCreateTime { get; set; }
+        public long? CaseCreate { get; set; }
 
         /// <summary>
         /// 
@@ -68,12 +70,12 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public long? Id { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("cid")]
-        public long Cid { get; set; }
+        public long? Cid { get; set; }
     }
 }

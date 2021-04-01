@@ -9,7 +9,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 
@@ -36,13 +36,13 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("id")]
-		public long Id { get; set; }
+		public long? Id { get; set; }
 
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("type")]
-		public long Type { get; set; }
+		public long? Type { get; set; }
 
 		/// <summary>
 		/// 

@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -10,7 +11,7 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("total")]
-        public long Total { get; set; }
+        public long? Total { get; set; }
 
         /// <summary>
         /// 
@@ -25,25 +26,27 @@ namespace TianYanCha.SDK.Reponse
         /// 
         /// </summary>
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public long? Id { get; set; }
 
+
+        public string CreateTime => Create.ToDateTime();
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("createTime")]
-        public long CreateTime { get; set; }
+        public long? Create { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("putDate")]
-        public long PutDate { get; set; }
+        public long? PutDate { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("removeDate")]
-        public long RemoveDate { get; set; }
+        public long? RemoveDate { get; set; }
 
         /// <summary>
         /// 依法补报了未报年份的年度报告并公示

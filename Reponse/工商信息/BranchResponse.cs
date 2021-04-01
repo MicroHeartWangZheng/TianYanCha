@@ -9,7 +9,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 
@@ -30,7 +30,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("estiblishTime")]
-		public long EstiblishTime { get; set; }
+		public long? EstiblishTime { get; set; }
 
 		/// <summary>
 		/// 0万元人民币
@@ -66,7 +66,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("id")]
-		public long Id { get; set; }
+		public long? Id { get; set; }
 
 		/// <summary>
 		/// 
@@ -78,7 +78,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("personType")]
-		public long PersonType { get; set; }
+		public long? PersonType { get; set; }
 
 		/// <summary>
 		/// 

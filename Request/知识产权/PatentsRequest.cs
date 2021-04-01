@@ -13,25 +13,25 @@ namespace TianYanCha.SDK.Request
         /// 发布开始时间
         /// </summary>
         [JsonProperty("pubDateBegin")]
-        public long PubDateBegin { get; set; }
+        public long? PubDateBegin { get; set; }
 
         /// <summary>
         /// 申请开始时间
         /// </summary>
         [JsonProperty("appDateBegin")]
-        public long AppDateBegin { get; set; }
+        public long? AppDateBegin { get; set; }
 
         /// <summary>
         /// 发布结束时间
         /// </summary>
         [JsonProperty("pubDateEnd")]
-        public long PubDateEnd { get; set; }
+        public long? PubDateEnd { get; set; }
 
         /// <summary>
         /// 申请结束时间
         /// </summary>
         [JsonProperty("appDateEnd")]
-        public long AppDateEnd { get; set; }
+        public long? AppDateEnd { get; set; }
 
         /// <summary>
         /// 每页条数（默认20条，最大20条）
@@ -55,7 +55,7 @@ namespace TianYanCha.SDK.Request
         /// 专利类型 1-发明专利 2-实用新型 3-外观专利 4-PCT发明 5-PCT实用新型
         /// </summary>
         [JsonProperty("patentType")]
-        public long PatentType { get; set; }
+        public long? PatentType { get; set; }
 
 
         public override string GetApiName()

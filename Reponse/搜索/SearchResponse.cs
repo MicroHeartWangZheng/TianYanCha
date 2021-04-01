@@ -16,7 +16,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 	}
 
 	public class SearchItem
@@ -55,7 +55,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("companyType")]
-		public long CompanyType { get; set; }
+		public long? CompanyType { get; set; }
 
 		/// <summary>
 		/// <em>北京百度网讯科技有限公司</em>
@@ -67,7 +67,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("id")]
-		public long Id { get; set; }
+		public long? Id { get; set; }
 
 		/// <summary>
 		/// 
@@ -79,7 +79,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("type")]
-		public long Type { get; set; }
+		public long? Type { get; set; }
 
 		/// <summary>
 		/// 北京

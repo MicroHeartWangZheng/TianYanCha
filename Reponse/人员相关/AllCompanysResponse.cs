@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -10,7 +11,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 
@@ -26,11 +27,13 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("base")]
 		public string Base { get; set; }
 
+
+		public string EstiblishTime => Estiblish.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("estiblishTime")]
-		public long EstiblishTime { get; set; }
+		public long? Estiblish { get; set; }
 
 		/// <summary>
 		/// 开业
@@ -48,7 +51,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("cid")]
-		public long Cid { get; set; }
+		public long? Cid { get; set; }
 
 		/// <summary>
 		/// 217128 万元

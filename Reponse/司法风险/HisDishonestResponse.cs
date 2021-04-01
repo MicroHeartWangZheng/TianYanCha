@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -11,7 +12,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 
@@ -58,11 +59,12 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("courtname")]
 		public string CourtName { get; set; }
 
+		public string PublishDate => Publish.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("publishdate")]
-        public long PublishDate { get; set; }
+        public long? Publish { get; set; }
 		
 		/// <summary>
 		/// 
@@ -92,7 +94,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("regdate")]
-		public long Regdate { get; set; }
+		public long? Regdate { get; set; }
 
 		/// <summary>
 		/// (2018)粤0106执22542号

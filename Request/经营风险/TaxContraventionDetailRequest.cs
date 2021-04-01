@@ -13,7 +13,7 @@ namespace TianYanCha.SDK.Request
         /// 违法id
         /// </summary>
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public long? Id { get; set; }
 
         public override string GetApiName()
         {

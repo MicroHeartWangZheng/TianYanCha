@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -10,7 +11,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 
@@ -97,13 +98,14 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("regdate")]
-		public long Regdate { get; set; }
+		public long? Regdate { get; set; }
 
+		public string Publishdate => Publish.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("publishdate")]
-		public long Publishdate { get; set; }
+		public long? Publish { get; set; }
 
 		/// <summary>
 		/// 中国国际经济贸易仲裁委员会

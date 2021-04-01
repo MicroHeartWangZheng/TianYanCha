@@ -10,7 +10,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("count")]
-		public long Count { get; set; }
+		public long? Count { get; set; }
 
 		/// <summary>
 		/// 周边风险
@@ -31,7 +31,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("total")]
-		public long Total { get; set; }
+		public long? Total { get; set; }
 
 		/// <summary>
 		/// 被执行信息
@@ -58,7 +58,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("id")]
-		public long Id { get; set; }
+		public long? Id { get; set; }
 
 		/// <summary>
 		/// 他 担任法人的 <a target=&singlequote&_blank&singlequote& href=&singlequote&https://www.tianyancha.com/company/22822&singlequote&>北京百度网讯科技有限公司</a> 曾因未按时履行法律义务而被法院<em>强制执行</em>
@@ -76,7 +76,7 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("companyId")]
-		public long CompanyId { get; set; }
+		public long? CompanyId { get; set; }
 
 		/// <summary>
 		/// 北京百度网讯科技有限公司
@@ -88,13 +88,13 @@ namespace TianYanCha.SDK.Reponse
 		/// 
 		/// </summary>
 		[JsonProperty("type")]
-		public long Type { get; set; }
+		public long? Type { get; set; }
 
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("riskCount")]
-		public long RiskCount { get; set; }
+		public long? RiskCount { get; set; }
 	}
 }
 
