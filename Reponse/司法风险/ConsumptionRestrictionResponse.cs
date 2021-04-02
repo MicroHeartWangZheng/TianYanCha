@@ -53,7 +53,7 @@ namespace TianYanCha.SDK.Reponse
         [JsonProperty("qyinfo")]
         public string Qyinfo { get; set; }
 
-        public string CaseCreateTime => CaseCreate.ToDateTime();
+        public string CaseCreateTimeStr => CaseCreate.ToDateTime();
         /// <summary>
         /// 
         /// </summary>

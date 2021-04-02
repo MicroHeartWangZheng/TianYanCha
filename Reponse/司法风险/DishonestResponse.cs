@@ -95,14 +95,14 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("performance")]
 		public string Performance { get; set; }
 
-		public string Regdate => Reg.ToDateTime();
+		public string RegdateStr => Reg.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("regdate")]
 		public long? Reg { get; set; }
 
-		public string PublishDate => Publish.ToDateTime();
+		public string PublishDateStr => Publish.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

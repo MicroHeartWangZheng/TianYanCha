@@ -29,7 +29,7 @@ namespace TianYanCha.SDK.Reponse
         public long? Id { get; set; }
 
 
-        public string CreateTime => Create.ToDateTime();
+        public string CreateTimeStr => Create.ToDateTime();
         /// <summary>
         /// 
         /// </summary>

@@ -33,7 +33,7 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("chainList")]
 		public List<List<ChainListItemItem>> ChainList { get; set; }
 
-		public string EstiblishTime => Estiblish.ToDateTime();
+		public string EstiblishTimeStr => Estiblish.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

@@ -100,7 +100,7 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("regdate")]
 		public long? Regdate { get; set; }
 
-		public string Publishdate => Publish.ToDateTime();
+		public string PublishdateStr => Publish.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

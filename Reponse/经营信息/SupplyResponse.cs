@@ -44,7 +44,7 @@ namespace TianYanCha.SDK.Reponse
 		public long? SupplierGraphId { get; set; }
 
 
-		public string AnnouncementDate => Announcement.ToDateTime();
+		public string AnnouncementDateStr => Announcement.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

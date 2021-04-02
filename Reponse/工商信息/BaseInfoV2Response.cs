@@ -65,7 +65,7 @@ namespace TianYanCha.SDK.Reponse
         public string UsedBondName { get; set; }
 
 
-        public string ApprovedTime => Approved.ToDateTime();
+        public string ApprovedTimeStr => Approved.ToDateTime();
 
 
         /// <summary>
@@ -182,7 +182,7 @@ namespace TianYanCha.SDK.Reponse
         public string CreditCode { get; set; }
 
 
-        public string FromTime => From.ToDateTime();
+        public string FromTimeStr => From.ToDateTime();
         /// <summary>
         /// 
         /// </summary>
@@ -237,7 +237,7 @@ namespace TianYanCha.SDK.Reponse
         [JsonProperty("actualCapital")]
         public string ActualCapital { get; set; }
 
-        public string EstiblishTime => Estiblish.ToDateTime();
+        public string EstiblishTimeStr => Estiblish.ToDateTime();
         /// <summary>
         /// 
         /// </summary>

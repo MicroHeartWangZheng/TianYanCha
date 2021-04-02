@@ -59,7 +59,7 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("courtname")]
 		public string CourtName { get; set; }
 
-		public string PublishDate => Publish.ToDateTime();
+		public string PublishDateStr => Publish.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

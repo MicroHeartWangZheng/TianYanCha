@@ -40,7 +40,7 @@ namespace TianYanCha.SDK.Reponse
 		public string LogoOssPath { get; set; }
 
 
-		public string SetupDate => Setup.ToDateTime();
+		public string SetupDateStr => Setup.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

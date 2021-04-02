@@ -28,7 +28,7 @@ namespace TianYanCha.SDK.Reponse
 		public string Base { get; set; }
 
 
-		public string EstiblishTime => Estiblish.ToDateTime();
+		public string EstiblishTimeStr => Estiblish.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

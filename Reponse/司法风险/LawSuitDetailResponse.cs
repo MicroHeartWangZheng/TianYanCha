@@ -54,7 +54,7 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("plalongiffRequest")]
 		public string PlalongiffRequest { get; set; }
 
-		public string Judgetime => Judge.ToDateTime();
+		public string JudgetimeStr => Judge.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

@@ -47,7 +47,7 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("caseCode")]
 		public string CaseCode { get; set; }
 
-		public string CaseCreateTime => CaseCreate.ToDateTime();
+		public string CaseCreateTimeStr => CaseCreate.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

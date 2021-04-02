@@ -47,7 +47,7 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("execCourtName")]
 		public string ExecCourtName { get; set; }
 
-		public string CaseCreateTime => CaseCreate.ToDateTime();
+		public string CaseCreateTimeStr => CaseCreate.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
