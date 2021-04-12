@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -25,6 +26,9 @@ namespace TianYanCha.SDK.Reponse
 		/// </summary>
 		[JsonProperty("regStatus")]
 		public string RegStatus { get; set; }
+
+
+		public string EstiblishTimeStr => EstiblishTime.ToDateTime();
 
 		/// <summary>
 		/// 

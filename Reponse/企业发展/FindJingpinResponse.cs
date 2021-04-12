@@ -21,6 +21,7 @@ namespace TianYanCha.SDK.Reponse
 
 	public class FindJingpinItem
 	{
+		public string DateStr => Date.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

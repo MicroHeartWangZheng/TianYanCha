@@ -102,6 +102,7 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("logo")]
 		public string Logo { get; set; }
 
+		public string EstiblishTimeStr => EstiblishTime.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

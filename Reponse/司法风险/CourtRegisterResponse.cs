@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -28,11 +29,13 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("litigant")]
 		public string Litigant { get; set; }
 
+		public string FilingDateStr => FilingDate.ToDateTime();
+
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("filingDate")]
-		public string FilingDate { get; set; }
+		public long? FilingDate { get; set; }
 
 		/// <summary>
 		/// 

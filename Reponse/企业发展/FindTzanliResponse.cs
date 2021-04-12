@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -56,6 +57,7 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("organization_name")]
 		public string OrganizationName { get; set; }
 
+		public string TzdateStr => Tzdate.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

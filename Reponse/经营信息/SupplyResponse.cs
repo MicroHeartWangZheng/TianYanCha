@@ -44,12 +44,12 @@ namespace TianYanCha.SDK.Reponse
 		public long? SupplierGraphId { get; set; }
 
 
-		public string AnnouncementDateStr => Announcement.ToDateTime();
+		public string AnnouncementDateStr => AnnouncementDate.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("announcement_date")]
-		public long? Announcement { get; set; }
+		public long? AnnouncementDate { get; set; }
 
 		/// <summary>
 		/// 

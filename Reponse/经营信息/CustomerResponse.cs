@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -36,6 +37,8 @@ namespace TianYanCha.SDK.Reponse
 
 	public class CustomerResultItem
 	{
+
+		public string AnnouncementDateStr => AnnouncementDate.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>

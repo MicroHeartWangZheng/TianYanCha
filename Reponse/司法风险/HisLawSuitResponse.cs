@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -62,11 +63,12 @@ namespace TianYanCha.SDK.Reponse
 		[JsonProperty("title")]
 		public string Title { get; set; }
 
+		public string SubmittimeStr => Submittime.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("submittime")]
-		public string Submittime { get; set; }
+		public long? Submittime { get; set; }
 
 		/// <summary>
 		/// 

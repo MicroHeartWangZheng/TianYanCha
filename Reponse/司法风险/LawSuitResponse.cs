@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -21,11 +22,12 @@ namespace TianYanCha.SDK.Reponse
 
 	public class LawSuitItem
 	{
+		public string SubmittimeStr => Submittime.ToDateTime();
 		/// <summary>
 		/// 
 		/// </summary>
 		[JsonProperty("submittime")]
-		public string Submittime { get; set; }
+		public long? Submittime { get; set; }
 
 		/// <summary>
 		/// 侵害作品信息网络传播权纠纷
