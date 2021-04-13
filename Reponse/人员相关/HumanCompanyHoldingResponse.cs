@@ -21,85 +21,102 @@ namespace TianYanCha.SDK.Reponse
 
     public class HumanCompanyHoldingItem
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonProperty("legalPersonId")]
-        public long? LegalPersonId { get; set; }
+		/// <summary>
+		/// 
+		/// </summary>
+		[JsonProperty("legalPersonId")]
+		public long? LegalPersonId { get; set; }
 
-        /// <summary>
-        /// 开业
-        /// </summary>
-        [JsonProperty("regStatus")]
-        public string RegStatus { get; set; }
+		/// <summary>
+		/// 存续
+		/// </summary>
+		[JsonProperty("regStatus")]
+		public string RegStatus { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonProperty("chainList")]
-        public List<List<HumanChainListItemItem>> ChainList { get; set; }
+		/// <summary>
+		/// 
+		/// </summary>
+		[JsonProperty("chainList")]
+		public List<List<ChainListItemItem>> ChainList { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonProperty("legalType")]
-        public long? LegalType { get; set; }
+		/// <summary>
+		/// 
+		/// </summary>
+		[JsonProperty("legalType")]
+		public long? LegalType { get; set; }
 
-        /// <summary>
-        /// 1001.000000万人民币
-        /// </summary>
-        [JsonProperty("regCapital")]
-        public string RegCapital { get; set; }
+		/// <summary>
+		/// 1001万人民币
+		/// </summary>
+		[JsonProperty("regCapital")]
+		public string RegCapital { get; set; }
 
-        /// <summary>
-        /// 北京宏景天下投资有限公司
-        /// </summary>
-        [JsonProperty("name")]
-        public string Name { get; set; }
+		/// <summary>
+		/// 北京宏景天下投资有限公司
+		/// </summary>
+		[JsonProperty("name")]
+		public string Name { get; set; }
 
-        /// <summary>
-        /// 宏景天下
-        /// </summary>
-        [JsonProperty("alias")]
-        public string Alias { get; set; }
+		/// <summary>
+		/// 宏景天下
+		/// </summary>
+		[JsonProperty("alias")]
+		public string Alias { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonProperty("logo")]
-        public string Logo { get; set; }
+		/// <summary>
+		/// 
+		/// </summary>
+		[JsonProperty("logo")]
+		public string Logo { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonProperty("percent")]
-        public DateTime? Percent { get; set; }
+		/// <summary>
+		/// 
+		/// </summary>
+		[JsonProperty("percent")]
+		public string Percent { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonProperty("cid")]
-        public string Cid { get; set; }
+		/// <summary>
+		/// 
+		/// </summary>
+		[JsonProperty("cid")]
+		public long? Cid { get; set; }
 
-        /// <summary>
-        /// 周达
-        /// </summary>
-        [JsonProperty("legalPersonName")]
-        public string LegalPersonName { get; set; }
-    }
+		/// <summary>
+		/// 周达
+		/// </summary>
+		[JsonProperty("legalPersonName")]
+		public string LegalPersonName { get; set; }
+	}
     public class HumanChainListItemItem
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonProperty("type")]
-        public string Type { get; set; }
+    {/// <summary>
+	 /// 
+	 /// </summary>
+		[JsonProperty("investType")]
+		public int InvestType { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonProperty("value")]
-        public DateTime? Value { get; set; }
-    }
+		/// <summary>
+		/// 
+		/// </summary>
+		[JsonProperty("id")]
+		public string Id { get; set; }
+
+		/// <summary>
+		/// 
+		/// </summary>
+		[JsonProperty("type")]
+		public string Type { get; set; }
+
+		/// <summary>
+		/// 
+		/// </summary>
+		[JsonProperty("value")]
+		public DateTime? Value { get; set; }
+
+		/// <summary>
+		/// 
+		/// </summary>
+		[JsonProperty("cid")]
+		public string Cid { get; set; }
+	}
 }
 
