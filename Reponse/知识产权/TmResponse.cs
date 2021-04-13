@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using TianYanCha.SDK.Extensions;
 
 namespace TianYanCha.SDK.Reponse
 {
@@ -57,11 +58,12 @@ namespace TianYanCha.SDK.Reponse
         [JsonProperty("tmClass")]
         public string TmClass { get; set; }
 
+        public string AppDateStr => AppDate.ToDateTime();
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("appDate")]
-        public string AppDate { get; set; }
+        public long? AppDate { get; set; }
 
         /// <summary>
         /// 38-通讯服务
@@ -93,11 +95,12 @@ namespace TianYanCha.SDK.Reponse
         [JsonProperty("tmFlow")]
         public string TmFlow { get; set; }
 
+        public string EventTimeStr => EventTime.ToDateTime();
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("eventTime")]
-        public string EventTime { get; set; }
+        public long? EventTime { get; set; }
 
         /// <summary>
         /// 
