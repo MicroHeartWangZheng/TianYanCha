@@ -36,12 +36,15 @@ namespace TianYanCha.SDK.Reponse
         [JsonProperty("createTime")]
         public long? Create { get; set; }
 
+
+        public string PutDateStr => PutDate.ToDateTime();
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("putDate")]
         public long? PutDate { get; set; }
 
+        public string RemoveDateStr => RemoveDate.ToDateTime();
         /// <summary>
         /// 
         /// </summary>
