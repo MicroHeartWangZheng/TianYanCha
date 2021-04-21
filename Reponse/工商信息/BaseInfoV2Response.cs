@@ -225,11 +225,12 @@ namespace TianYanCha.SDK.Reponse
         [JsonProperty("email")]
         public string Email { get; set; }
 
+        public string ToTimeStr => ToTime.ToDateTime();
         /// <summary>
         /// 
         /// </summary>
         [JsonProperty("toTime")]
-        public string ToTime { get; set; }
+        public long? ToTime { get; set; }
 
         /// <summary>
         /// 
