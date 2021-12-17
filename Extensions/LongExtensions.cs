@@ -8,7 +8,7 @@ namespace TianYanCha.SDK.Extensions
         {
             if (!@long.HasValue)
                 return string.Empty;
-            var datetime = new DateTime(1970, 1, 1, 0, 0, 0, 0);
+            var datetime = new DateTime(1970, 1, 1, 8, 0, 0, 0);
             var ticks = datetime.Ticks + @long.Value * 10000;
             return new DateTime(ticks).ToString("yyyy-MM-dd HH:mm:ss");
         }
